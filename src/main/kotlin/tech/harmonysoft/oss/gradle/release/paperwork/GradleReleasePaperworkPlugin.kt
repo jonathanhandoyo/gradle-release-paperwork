@@ -265,7 +265,7 @@ class GradleReleasePaperworkPlugin : Plugin<Project> {
                 commitMessage
             }
             if (!changeDescription.isNullOrBlank()) {
-                result += "  * ${commit.id.name} $changeDescription"
+                result += "  * `${commit.id.name}` - $changeDescription"
                 if (result.size > maxChanges) {
                     break
                 }

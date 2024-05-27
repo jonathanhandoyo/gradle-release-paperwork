@@ -75,7 +75,7 @@ internal class GradleReleasePaperworkPluginTest {
 
     private fun getCommitDescriptionInNotes(commitMessage: String): String {
         val commit = getCommit(commitMessage)
-        return "${commit.id.name} $commitMessage"
+        return "`${commit.id.name}` - $commitMessage"
     }
 
     private fun runBuild(): BuildResult {
